@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+    <script src="chuyendoitiente.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Amount</td>
+        <td>From Curency</td>
+        <td>To Curency</td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" name="amount" id="amount">
+        </td>
+        <td>
+            <select id="fromunit">
+                <option value="1">USD</option>
+                <option value="23000">VND</option>
+            </select>
+        </td>
+        <td>
+            <select id="tounit">
+                <option value="1">USD</option>
+                <option value="23000">VND</option>
+            </select>
+        </td>
+        <td>
+            <input type="button" name="Convert" id="convert" onclick="convert()" value="Convert">
+        </td>
+    </tr>
+</table>
+<p id="result"></p>
+</body>
+</html>
